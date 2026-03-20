@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .bio-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px;
+      align-items: flex-start;
+    }
+
+    /* Left column: text */
+    .bio-text {
+      flex: 2 1 400px;
+      font-family: 'YorkieDEMO-Medium', sans-serif;
+      text-shadow: 2px 2px var(--shadow-color);
+    }
+
+    /* Right column: image */
+    .bio-image {
+      flex: 1 1 250px;
+      max-width: 300px;
+    }
+
+    .bio-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      box-shadow: 2px 2px var(--shadow-color);
+      display: block;
+    }
+
+    @media (max-width: 800px) {
+      .bio-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .bio-image, .bio-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>About Me</h1>
+</header>
+
+<main>
+  <div class="bio-container">
+    <!-- Left: Bio text -->
+    <div class="bio-text">
+      <p>
+        Ethan Roman Drake is writing this bio while his girlfriend sits next to him and plays Sabrina Carpenter. She has never listened to Sabrina Carpenter out loud before, that's odd. Ethan Roman Drake is currently based in Richmond VA, the city of whispers. The dogs are coming and killing. Ethan Roman Drake puts you in a wheat field of monsters. But without ever forgetting to place the bright nickel-sized ball of hope in your palm. His medium slips in and out of a digital skin. Humor and Earnestly dance and tremble in terror. Ethan Roman Drake is confused. His video works freeze the train robbery. His songs ask what the truth is and support the opposite in the system of beliefs. Ethan Roman Drake knows there is a pattern that he cannot see.
+      </p>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="bio-image">
+      <img src="assets/moneyspread.PNG" alt="Ethan Roman Drake">
+    </div>
+  </div>
+</main>
+
+<footer>
+  <nav>
+    <ul class="bottom-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="visual.html">Visual Work</a></li>
+      <li><a href="audio.html">Audio Work</a></li>
+      <li><a href="accomplishments.html">Accomplishments</a></li>
+      <li><a href="dreamj.html">Dream Journal</a></li>
+      <li><a href="bio.html">Bio</a></li>
+    </ul>
+  </nav>
+</footer>
+
+</body>
+</html>
